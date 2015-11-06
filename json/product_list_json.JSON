@@ -1,0 +1,29 @@
+{
+    "status": 0,
+    "products": {
+        "2345243": {
+            "PRODUCT_ID": "1",
+            "PRODUCT_NAME": "burger",
+            "PRODUCT_BARCODE": "2345243",
+            "PRODUCT_PRICE": "1.2"
+        },
+        "4569919": {
+            "PRODUCT_ID": "3",
+            "PRODUCT_NAME": "peak",
+            "PRODUCT_BARCODE": "4569919",
+            "PRODUCT_PRICE": "15"
+        },
+        "9782342": {
+            "PRODUCT_ID": "4",
+            "PRODUCT_NAME": "ideal milk",
+            "PRODUCT_BARCODE": "9782342",
+            "PRODUCT_PRICE": "2"
+        },
+        "6433949": {
+            "PRODUCT_ID": "5",
+            "PRODUCT_NAME": "kalyppo",
+            "PRODUCT_BARCODE": "6433949",
+            "PRODUCT_PRICE": "1.4"
+        }
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+<!--    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome-4.4.0/font-awesome-4.4.0/css/font-awesome.min.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Vendite</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse hide-on-small-only" href="set_product.html"><i class="fa fa-bars"></i>
+</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li class="active"><a href="add_products.html">Add Product</a></li>
+                        <li><a href="set_products.html">Set Pricing</a></li>
+                        <li><a href="#" onclick="logout()">Logout</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li>
+                            <div class="chip right z-depth-2">
+                                User: <span class="user"></span>
+                            </div>
+                            <img class="responsive-img circle " src="image/user.png">
+
+
+                        </li>
+                        <li><a href="inventory.html" class="active">Inventory</a></li>
+                        <li class="active"><a href="add_products.html">Add Product</a></li>
+                        <li><a href="set_products.html">Set Pricing</a></li>
+                        <li><a onclick="logout()">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="chip left hide-on-med-and-up">
+                <img src="image/user.png" alt="Contact Person">
+                <span class="user"></span>
+            </div>
+            <h2 align="center">Add Product</h2>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Product Name" id="product_name" type="text" class="validate">
+                            <label for="product_name">Product Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Product Barcode" id="product_barcode" type="text" class="validate">
+                            <label for="product_barcode">Product Barcode</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="product_price" type="text" class="validate">
+                            <label for="product_price">Product Price</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button align="right" class="btn waves-effect waves-light" type="submit" name="action" id="addBtn"><i class="fa fa-plus-circle"></i> Submit
+            </button>
+            <div class="fixed-action-btn hide-on-med-and-up" style="bottom: 45px; right: 24px;">
+                <a class="btn-floating btn-large blue">
+                    <i class="fa fa-plus"></i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating yellow tooltipped" onclick="logout()" data-position="left" data-tooltip="Logout"><i class="fa fa-sign-out"></i></a></li>
+                    <li><a class="btn-floating green tooltipped" href="inventory.html" data-position="left" data-tooltip="Inventory"><i class="fa fa-table"></i></a></li>
+                    <li><a class="btn-floating red tooltipped" href="set_products.html" data-position="left" data-tooltip="Set price"><i class="fa fa-pencil-square-o"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Vendite</h5>
+                    <p class="grey-text text-lighten-4">Keep track of your inventory</p>
+                </div>
+            </div>
+        </div>
+        <div align="right" class="footer-copyright">
+            <div class="container">
+                by Sheamus Punch Yebisi
+            </div>
+        </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/owner_add.js"></script>
+</body>
+
+</html>
