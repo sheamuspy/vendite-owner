@@ -24,7 +24,7 @@ $(function () {
         productBarcode = $("#product_barcode").val();
         productPrice = $("#product_price").val();
 
-        URL = "http://localhost/mobile_web/Vendite/php/owner_function.php?cmd=2&barcode='" + productBarcode + "'&price=" + productPrice;
+        URL = "http://cs.ashesi.edu.gh/~csashesi/class2016/sheamus-yebisi/mobile_web/Vendite/php/owner_function.php?cmd=2&barcode='" + productBarcode + "'&price=" + productPrice;
 
         response = sendRequest(URL);
 
@@ -54,7 +54,7 @@ function getProduct() {
     var barcode, URL, response, product;
     barcode = $("#searchTxt").val();
 
-    URL = "http://localhost/mobile_web/POS/php/owner_function.php?cmd=4&barcode='" + barcode + "'";
+    URL = "http://cs.ashesi.edu.gh/~csashesi/class2016/sheamus-yebisi/mobile_web/Vendite/php/owner_function.php?cmd=4&barcode='" + barcode + "'";
     response = sendRequest(URL);
     product = response.products;
     $("#product_id").val(product.PRODUCT_ID);
@@ -69,7 +69,7 @@ function getProductS() {
     var barcode, URL, response, product;
     barcode = $("#searchTxtS").val();
 
-    URL = "http://localhost/mobile_web/POS/php/owner_function.php?cmd=4&barcode='" + barcode + "'";
+    URL = "http://cs.ashesi.edu.gh/~csashesi/class2016/sheamus-yebisi/mobile_web/Vendite/php/owner_function.php?cmd=4&barcode='" + barcode + "'";
     response = sendRequest(URL);
     product = response.products;
     $("#product_id").val(product.PRODUCT_ID);

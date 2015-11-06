@@ -27,7 +27,7 @@ function setupTable() {
     "use strict";
     var URL, response, i, products;
 
-    URL = "http://localhost/mobile_web/Vendite/php/owner_function.php?cmd=0";
+    URL = "http://cs.ashesi.edu.gh/~csashesi/class2016/sheamus-yebisi/mobile_web/Vendite/php/owner_function.php?cmd=0";
     response = sendRequest(URL);
 
     products = response.products;
@@ -47,7 +47,7 @@ function setupTable() {
 
 function setupList() {
     var URL, response, i, products, prodNum, newProd, name, num, index;
-    URL = "http://localhost/mobile_web/Vendite/php/owner_function.php?cmd=0";
+    URL = "http://cs.ashesi.edu.gh/~csashesi/class2016/sheamus-yebisi/mobile_web/Vendite/php/owner_function.php?cmd=0";
     response = sendRequest(URL);
 
     products = response.products;

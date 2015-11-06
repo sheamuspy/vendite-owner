@@ -23,7 +23,7 @@ $(function () {
         productName = $("#product_name").val();
         productPrice = $("#product_price").val();
 
-        URL = "http://localhost/mobile_web/Vendite/php/owner_function.php?cmd=1&name='" + productName + "'&barcode='" + productBarcode + "'&price=" + productPrice;
+        URL = "http://cs.ashesi.edu.gh/~csashesi/class2016/sheamus-yebisi/mobile_web/Vendite/php/owner_function.php?cmd=1&name='" + productName + "'&barcode='" + productBarcode + "'&price=" + productPrice;
         response = sendRequest(URL);
 
         if (response.status === 0) {

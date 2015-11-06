@@ -195,8 +195,8 @@
         }
 
         if($obj->get_product_quantity($name)){
-            $row = $obj->fetch()['QUANTITY'];
-            $response = "Quantity of ".$name." is ".$row;
+            $row = $obj->fetch();
+            $response = "Quantity of ".$name." is ".$row['QUANTITY'];
             echo $response;
         }
         else{
