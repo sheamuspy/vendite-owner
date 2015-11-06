@@ -18,12 +18,14 @@ function login() {
 
     var response = sendRequest(url);
 
-    if (response.status == 0) {
+    if (response.status === 0) {
         var name = response.user['USERNAME'];
         var role = response.user['ROLE'];
         sessionStorage.setItem("name", name);
         sessionStorage.setItem("role", role);
         window.location = "inventory.html";
+
+    } else {
 
     }
 }

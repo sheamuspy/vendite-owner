@@ -44,7 +44,9 @@
             exit();
         }
 
-        if($obj->validate_user($username, $password)){
+        $obj->validate_user($username, $password);
+
+        if($obj->get_num_rows() > 0){
             $row = $obj->fetch();
             $json = '{"status":0, "user":'.json_encode($row).'}';
             echo $json;
