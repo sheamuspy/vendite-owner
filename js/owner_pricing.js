@@ -8,10 +8,10 @@ $(document).ready(function () {
 
     $('.modal-trigger').leanModal();
 
-//    if (sessionStorage.length == 0) {
-//        window.location = "index.html";
-//    }
-//
+    if (sessionStorage.length == 0) {
+        window.location = "index.html";
+    }
+
     var u = sessionStorage.getItem("name");
 
     $(".user").html(u);

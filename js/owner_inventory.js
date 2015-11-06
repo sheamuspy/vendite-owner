@@ -3,9 +3,9 @@
 
 $(document).ready(function () {
     "use strict";
-//    if (sessionStorage.length == 0) {
-//        window.location = "index.html";
-//    }
+    if (sessionStorage.length == 0) {
+        window.location = "index.html";
+    }
 
     $(".button-collapse").sideNav();
 
