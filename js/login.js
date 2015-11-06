@@ -26,6 +26,6 @@ function login() {
         window.location = "inventory.html";
 
     } else {
-
+        Materialize.toast("Password or username is incorrect.", 2000);
     }
 }
